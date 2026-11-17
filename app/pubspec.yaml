@@ -1,7 +1,7 @@
 name: lexismash_app
 description: "Involucro nativo per gli store che mostra LexiSmash (lexismash.it) come un'app installata sul dispositivo."
 publish_to: 'none'
-version: 1.0.0+1
+version: 1.1.0+2
 
 environment:
   sdk: '>=3.5.0 <4.0.0'   # 16/11/2026: serve per onPopInvokedWithResult (Flutter 3.24+)
@@ -10,6 +10,15 @@ dependencies:
   flutter:
     sdk: flutter
   webview_flutter: ^4.7.0
+  # D2 (17/11/2026): migliorie native. Tutte librerie libere, senza Google Play
+  # Services: l'app resta pubblicabile su F-Droid.
+  webview_flutter_android: ^4.0.0   # file, permessi e audio della WebView su Android
+  url_launcher: ^6.3.0              # link esterni nel browser o nell'app giusta
+  share_plus: ^10.1.0               # menu Condividi del telefono
+  wakelock_plus: ^1.2.8             # schermo acceso durante la partita
+  permission_handler: ^11.3.1       # permesso del microfono
+  speech_to_text: ^7.0.0            # comandi vocali con il riconoscimento del telefono
+  file_picker: ^8.1.2               # scelta dei file (Jukebox, impostazioni, video)
 
 dev_dependencies:
   flutter_test:
