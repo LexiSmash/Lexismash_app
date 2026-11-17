@@ -1,0 +1,31 @@
+name: lexismash_app
+description: "Involucro nativo per gli store che mostra LexiSmash (lexismash.it) come un'app installata sul dispositivo."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.5.0 <4.0.0'   # 16/11/2026: serve per onPopInvokedWithResult (Flutter 3.24+)
+
+dependencies:
+  flutter:
+    sdk: flutter
+  webview_flutter: ^4.7.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.14.1   # D1 (16/11/2026): icona dell'app da assets/icon/
+
+flutter:
+  uses-material-design: true
+
+# D1 (16/11/2026): icona dell'app, generata con «dart run flutter_launcher_icons»
+# (lo fa da solo strumenti/prepara-android.ps1). Stessa immagine della PWA del sito.
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/icon.png"
+  adaptive_icon_background: "#0F172A"
+  adaptive_icon_foreground: "assets/icon/icon-foreground.png"
+  remove_alpha_ios: true
