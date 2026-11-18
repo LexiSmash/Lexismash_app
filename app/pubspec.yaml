@@ -14,16 +14,16 @@ dependencies:
   # Services: l'app resta pubblicabile su F-Droid.
   webview_flutter_android: ^4.0.0   # file, permessi e audio della WebView su Android
   url_launcher: ^6.3.0              # link esterni nel browser o nell'app giusta
-  share_plus: ^10.1.0               # menu Condividi del telefono
+  share_plus: ^13.3.1               # menu Condividi del telefono (API SharePlus.instance)
   wakelock_plus: ^1.2.8             # schermo acceso durante la partita
-  permission_handler: ^11.3.1       # permesso del microfono
+  permission_handler: ^13.0.2       # permesso del microfono
   speech_to_text: ^7.0.0            # comandi vocali con il riconoscimento del telefono
-  file_picker: ^8.1.2               # scelta dei file (Jukebox, impostazioni, video)
+  file_selector: ^1.0.3             # scelta dei file (Jukebox, impostazioni, video), libreria ufficiale di Flutter
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^3.0.0
+  flutter_lints: ^6.0.0
   flutter_launcher_icons: ^0.14.1   # D1 (16/11/2026): icona dell'app da assets/icon/
 
 flutter:

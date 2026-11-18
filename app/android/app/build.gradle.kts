@@ -6,8 +6,8 @@ plugins {
 
 android {
     namespace = "it.lexismash.lexismash_app"
-    compileSdk = flutter.compileSdkVersion
-    ndkVersion = "30.0.16248370"
+    compileSdk = 37 // 18/11/2026: permission_handler_android richiede Android 37 (era flutter.compileSdkVersion = 36)
+    ndkVersion = flutter.ndkVersion
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17

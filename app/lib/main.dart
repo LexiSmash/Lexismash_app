@@ -27,7 +27,7 @@
 import 'dart:convert';
 import 'dart:io' show Platform;
 
-import 'package:file_picker/file_picker.dart';
+import 'package:file_selector/file_selector.dart';
 import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:share_plus/share_plus.dart';
@@ -183,27 +183,23 @@ class _LexiSmashWebViewScreenState extends State<LexiSmashWebViewScreen> {
 
   // ---------------------------------------------------------------- file (Jukebox, impostazioni, video)
   Future<List<String>> _onShowFileSelector(FileSelectorParams params) async {
+    // 18/11/2026: file_selector (libreria ufficiale di Flutter) al posto di file_picker,
+    // rimasta indietro con le versioni di Android.
     final accept = params.acceptTypes.join(',').toLowerCase();
-    FileType type = FileType.any;
-    List<String>? ext;
-    if (accept.contains('audio')) {
-      type = FileType.audio;
-    } else if (accept.contains('video')) {
-      type = FileType.video;
-    } else if (accept.contains('image')) {
-      type = FileType.image;
-    } else if (accept.contains('.json')) {
-      type = FileType.custom;
-      ext = ['json'];
-    }
+    final List<String> mimes = [];
+    if (accept.contains('audio')) mimes.add('audio/*');
+    if (accept.contains('video')) mimes.add('video/*');
+    if (accept.contains('image')) mimes.add('image/*');
+    if (accept.contains('.json') || accept.contains('application/json')) mimes.add('application/json');
+    final groups = mimes.isEmpty ? <XTypeGroup>[] : [XTypeGroup(label: 'LexiSmash', mimeTypes: mimes)];
+    String toUri(XFile f) => f.path.startsWith('content://') || f.path.startsWith('file://') ? f.path : Uri.file(f.path).toString();
     try {
-      final res = await FilePicker.platform.pickFiles(
-        allowMultiple: params.mode == FileSelectorMode.openMultiple,
-        type: type,
-        allowedExtensions: ext,
-      );
-      if (res == null) return <String>[];
-      return res.files.where((f) => f.path != null).map((f) => Uri.file(f.path!).toString()).toList();
+      if (params.mode == FileSelectorMode.openMultiple) {
+        final files = await openFiles(acceptedTypeGroups: groups);
+        return files.map(toUri).toList();
+      }
+      final file = await openFile(acceptedTypeGroups: groups);
+      return file == null ? <String>[] : [toUri(file)];
     } catch (_) {
       return <String>[];
     }
@@ -221,7 +217,7 @@ class _LexiSmashWebViewScreenState extends State<LexiSmashWebViewScreen> {
     switch (m['type']) {
       case 'share':
         final text = [m['text'], m['url']].where((x) => x is String && x.isNotEmpty).join('\n');
-        if (text.isNotEmpty) await Share.share(text, subject: (m['title'] as String?) ?? 'LexiSmash');
+        if (text.isNotEmpty) await SharePlus.instance.share(ShareParams(text: text, subject: (m['title'] as String?) ?? 'LexiSmash'));
         break;
       case 'speechStart':
         await _speechStart(m['id']?.toString() ?? '0', (m['lang'] as String?) ?? 'it-IT');
