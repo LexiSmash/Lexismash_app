@@ -22,6 +22,20 @@ The official mobile app of [**LexiSmash**](https://lexismash.it), a multiplayer 
 
 ## [👉 Click here to download the latest APK! 👈](https://github.com/LexiSmash/Lexismash_app/releases/latest)
 
+<a href="https://github.com/LexiSmash/Lexismash_app/blob/main/Readme_imgs/00.jpeg"><img src="https://github.com/LexiSmash/Lexismash_app/blob/main/Readme_imgs/00.jpeg" alt="00.jpg" width="15%"></a>
+<a href="https://github.com/LexiSmash/Lexismash_app/blob/main/Readme_imgs/01.jpeg"><img src="https://github.com/LexiSmash/Lexismash_app/blob/main/Readme_imgs/01.jpeg" alt="01.jpg" width="15%"></a>
+<a href="https://github.com/LexiSmash/Lexismash_app/blob/main/Readme_imgs/02.jpeg"><img src="https://github.com/LexiSmash/Lexismash_app/blob/main/Readme_imgs/02.jpeg" alt="02.jpg" width="15%"></a>
+<a href="https://github.com/LexiSmash/Lexismash_app/blob/main/Readme_imgs/03.jpeg"><img src="https://github.com/LexiSmash/Lexismash_app/blob/main/Readme_imgs/03.jpeg" alt="03.jpg" width="15%"></a>
+<a href="https://github.com/LexiSmash/Lexismash_app/blob/main/Readme_imgs/04.jpeg"><img src="https://github.com/LexiSmash/Lexismash_app/blob/main/Readme_imgs/04.jpeg" alt="04.jpg" width="15%"></a>
+<a href="https://github.com/LexiSmash/Lexismash_app/blob/main/Readme_imgs/05.jpeg"><img src="https://github.com/LexiSmash/Lexismash_app/blob/main/Readme_imgs/05.jpeg" alt="05.jpg" width="15%"></a>
+<a href="https://github.com/LexiSmash/Lexismash_app/blob/main/Readme_imgs/06.jpeg"><img src="https://github.com/LexiSmash/Lexismash_app/blob/main/Readme_imgs/06.jpeg" alt="06.jpg" width="15%"></a>
+<a href="https://github.com/LexiSmash/Lexismash_app/blob/main/Readme_imgs/07.jpeg"><img src="https://github.com/LexiSmash/Lexismash_app/blob/main/Readme_imgs/07.jpeg" alt="07.jpg" width="15%"></a>
+<a href="https://github.com/LexiSmash/Lexismash_app/blob/main/Readme_imgs/09.jpeg"><img src="https://github.com/LexiSmash/Lexismash_app/blob/main/Readme_imgs/09.jpeg" alt="09.jpg" width="15%"></a>
+<a href="https://github.com/LexiSmash/Lexismash_app/blob/main/Readme_imgs/10.jpeg"><img src="https://github.com/LexiSmash/Lexismash_app/blob/main/Readme_imgs/10.jpeg" alt="10.jpg" width="15%"></a>
+<a href="https://github.com/LexiSmash/Lexismash_app/blob/main/Readme_imgs/11.jpeg"><img src="https://github.com/LexiSmash/Lexismash_app/blob/main/Readme_imgs/11.jpeg" alt="11.jpg" width="15%"></a>
+<a href="https://github.com/LexiSmash/Lexismash_app/blob/main/Readme_imgs/12.jpeg"><img src="https://github.com/LexiSmash/Lexismash_app/blob/main/Readme_imgs/12.jpeg" alt="12.jpg" width="15%"></a>
+<a href="https://github.com/LexiSmash/Lexismash_app/blob/main/Readme_imgs/13.jpeg"><img src="https://github.com/LexiSmash/Lexismash_app/blob/main/Readme_imgs/13.jpeg" alt="13.jpg" width="15%"></a>
+
 </div>
 
 ---
