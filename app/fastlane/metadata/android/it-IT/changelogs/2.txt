@@ -1,0 +1,1 @@
+Prima versione: schermata senza rete, link esterni nel browser, condivisione nativa, comandi vocali, scelta dei file, schermo acceso in partita.

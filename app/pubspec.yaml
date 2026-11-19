@@ -35,6 +35,7 @@ flutter_launcher_icons:
   android: true
   ios: true
   image_path: "assets/icon/icon.png"
-  adaptive_icon_background: "#0F172A"
-  adaptive_icon_foreground: "assets/icon/icon-foreground.png"
+  adaptive_icon_background: "#19191B"   # 19/11/2026: stesso colore dello sfondo del disegno (prima #0F172A: si vedeva il quadrato)
+  adaptive_icon_foreground: "assets/icon/icon-foreground.png"   # disegno al 65%, dentro la zona sicura del cerchio
+  adaptive_icon_monochrome: "assets/icon/icon-monochrome.png"   # icone «a tema» di Android 13+
   remove_alpha_ios: true

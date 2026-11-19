@@ -1,0 +1,10 @@
+<p><b>LexiSmash</b> è un party game di parole multigiocatore da giocare insieme: pesca le lettere, batti il timer e trova le parole migliori con i tuoi amici.</p>
+<p>Il telefono fa da controller e una TV, un monitor o qualsiasi schermo diventa il tabellone condiviso. Crei una stanza, condividi il codice e si gioca: i tuoi amici possono entrare anche dal browser, senza installare niente.</p>
+<ul>
+<li>Modalità classica, integrata e tornei, con i bot quando mancano giocatori</li>
+<li>Dizionari in italiano, inglese, francese, tedesco, spagnolo e olandese</li>
+<li>Jukebox sincronizzato, chat, effetti sonori, controller e comandi vocali</li>
+<li>Profilo con livelli, obiettivi, serie di giorni e classifica globale</li>
+<li>Accessibilità: tema chiaro e scuro, filtri per daltonici, movimento ridotto</li>
+</ul>
+<p>L'app mostra il gioco di lexismash.it, quindi è sempre aggiornata. Aggiunge quello che serve su un telefono: schermata senza rete, condivisione nativa, riconoscimento vocale, scelta dei file per il jukebox e schermo acceso durante la partita.</p>

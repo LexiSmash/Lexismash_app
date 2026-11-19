@@ -1,0 +1,1 @@
+First release: offline screen, external links in the browser, native sharing, voice commands, file picking, screen kept on during games.

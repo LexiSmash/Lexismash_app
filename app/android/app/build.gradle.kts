@@ -1,3 +1,15 @@
+import java.io.FileInputStream
+import java.util.Properties
+
+// D3 (18/11/2026): firma della versione di rilascio. La chiave e le password stanno in
+// android/key.properties (MAI nel repository: è nel .gitignore). Senza quel file la release
+// si firma con la chiave di debug (prove sul telefono; F-Droid firma da sé con la sua chiave).
+val keystoreProperties = Properties()
+val keystorePropertiesFile = rootProject.file("key.properties")
+if (keystorePropertiesFile.exists()) {
+    keystoreProperties.load(FileInputStream(keystorePropertiesFile))
+}
+
 plugins {
     id("com.android.application")
     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
@@ -29,12 +41,27 @@ android {
         versionName = flutter.versionName
     }
 
+    signingConfigs {
+        create("release") {
+            if (keystorePropertiesFile.exists()) {
+                keyAlias = keystoreProperties["keyAlias"] as String
+                keyPassword = keystoreProperties["keyPassword"] as String
+                storeFile = file(keystoreProperties["storeFile"] as String)
+                storePassword = keystoreProperties["storePassword"] as String
+            }
+        }
+    }
+
     buildTypes {
         release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
-            signingConfig = signingConfigs.getByName("debug")
+            signingConfig = if (keystorePropertiesFile.exists()) signingConfigs.getByName("release") else signingConfigs.getByName("debug")
         }
+    }
+
+    // F-Droid: niente blocco cifrato «dependency metadata» di Google dentro l'APK.
+    dependenciesInfo {
+        includeInApk = false
+        includeInBundle = false
     }
 }
 

@@ -1,0 +1,10 @@
+<p><b>LexiSmash</b> is a multiplayer word party game to play together: draw the letters, race the timer and build the best words with your friends.</p>
+<p>Your phone is the controller and a TV, a monitor or any screen becomes the shared board. Create a room, share the code and play: no installation needed for your friends, they can join from a browser too.</p>
+<ul>
+<li>Classic, integrated and tournament modes, with bots when you are short of players</li>
+<li>Dictionaries in Italian, English, French, German, Spanish and Dutch</li>
+<li>Synchronised jukebox, chat, sound effects, controller and voice commands</li>
+<li>Profiles with levels, achievements, streaks and a global leaderboard</li>
+<li>Accessibility: light and dark themes, colour-blind filters, reduced motion</li>
+</ul>
+<p>The app shows the game at lexismash.it, so it is always up to date. It adds what a phone needs: an offline screen, native sharing, voice recognition, file picking for the jukebox and a screen that stays on during the game.</p>
