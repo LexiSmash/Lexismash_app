@@ -19,7 +19,7 @@ pluginManagement {
 
 plugins {
     id("dev.flutter.flutter-plugin-loader") version "1.0.0"
-    id("com.android.application") version "9.1.0" apply false
+    id("com.android.application") version "9.1.1" apply false // 19/11/2026: minimo richiesto da Flutter 3.50
     id("org.jetbrains.kotlin.android") version "2.4.0" apply false
 }
 

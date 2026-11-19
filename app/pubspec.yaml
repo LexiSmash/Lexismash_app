@@ -1,5 +1,5 @@
 name: lexismash_app
-description: "Involucro nativo per gli store che mostra LexiSmash (lexismash.it) come un'app installata sul dispositivo."
+description: "Official LexiSmash app: a lightweight Flutter wrapper around lexismash.it, the multiplayer word party game."
 publish_to: 'none'
 version: 1.1.0+2
 
