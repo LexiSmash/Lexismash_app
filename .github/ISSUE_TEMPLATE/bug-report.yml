@@ -1,0 +1,42 @@
+name: "App bug report"
+description: "Something doesn't work in the Android app (install, start, links, sharing, voice, files…)."
+title: "[App] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks! This form is for the **mobile app**. Problems with the game itself (rules, screens, Store…) go to the [LexiSmash community repository](https://github.com/LexiSmash/.github/issues).
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: "Shown in Android Settings → Apps → LexiSmash (e.g. 1.1.0)."
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Phone and Android version
+      placeholder: "e.g. Fairphone 3, Android 13"
+    validations:
+      required: true
+  - type: dropdown
+    id: source
+    attributes:
+      label: Installed from
+      options: ["GitHub Releases", "Obtainium", "F-Droid", "Built from source"]
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: "What you did, what you expected, what happened instead."
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. Open the app\n2. …"

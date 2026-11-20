@@ -1,13 +1,18 @@
 ## What changes
 
-<!-- e.g. Spanish / scrabble: Ñ 10 → 8 -->
+<!-- e.g. external links to example.com now open in the browser -->
 
 ## Why
 
-<!-- Explain the reason. A link to a source (official tile set, rulebook…) helps a lot. -->
+<!-- Explain the reason. -->
+
+## How I tested it
+
+<!-- Device / emulator, Android version, what you tried. -->
 
 ## Checklist
 
-- [ ] Only one language changed (or the same reason applies to every language changed)
-- [ ] Letters in UPPERCASE, file format unchanged
-- [ ] The JSON is still valid
+- [ ] The app still builds (`flutter build apk --release`) and runs on a device or emulator
+- [ ] No proprietary or tracking libraries added
+- [ ] If dependencies changed, `app/pubspec.lock` is committed too
+- [ ] No secrets (keys, passwords, `key.properties`) committed
