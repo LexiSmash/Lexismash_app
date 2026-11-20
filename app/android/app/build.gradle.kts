@@ -3,7 +3,7 @@ import java.util.Properties
 
 // D3 (18/11/2026): firma della versione di rilascio. La chiave e le password stanno in
 // android/key.properties (MAI nel repository: è nel .gitignore). Senza quel file la release
-// si firma con la chiave di debug (prove sul telefono; F-Droid firma da sé con la sua chiave).
+// esce non firmata (F-Droid la firma da sé con la sua chiave).
 val keystoreProperties = Properties()
 val keystorePropertiesFile = rootProject.file("key.properties")
 if (keystorePropertiesFile.exists()) {
@@ -54,7 +54,9 @@ android {
 
     buildTypes {
         release {
-            signingConfig = if (keystorePropertiesFile.exists()) signingConfigs.getByName("release") else signingConfigs.getByName("debug")
+            // 20/11/2026: senza key.properties la release resta NON firmata (come la vuole F-Droid,
+            // che firma con la sua chiave); con key.properties si firma con la chiave dello sviluppatore.
+            signingConfig = if (keystorePropertiesFile.exists()) signingConfigs.getByName("release") else null
         }
     }
 
