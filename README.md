@@ -72,8 +72,8 @@ The official mobile app of [**LexiSmash**](https://lexismash.it), a multiplayer 
 
 ### Download
 
-- **GitHub Releases**: signed APKs in [Releases](https://github.com/LexiSmash/Lexismash_app/releases) — download, open, install.
-- **IzzyOnDroid** and **F-Droid**: coming soon.
+- **Obtainium**: add `https://github.com/LexiSmash/Lexismash_app` in [Obtainium](https://github.com/ImranR98/Obtainium) to get automatic updates straight from the Releases.
+- **F-Droid**: coming soon.
 
 ### Build from source
 
@@ -86,7 +86,7 @@ flutter run                  # debug build on a connected phone
 flutter build apk --release  # release APK in build/app/outputs/flutter-apk/
 ```
 
-Release signing reads `app/android/key.properties`, which is never committed. Without it, the release build is signed with the debug key — fine for trying it on your own phone.
+Release signing reads `app/android/key.properties`, which is never committed. Without it, the release build is the release APK is left unsigned (that’s what F-Droid expects: it signs the builds with its own key).
 
 ## 📂 Repository structure
 
